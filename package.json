@@ -1,0 +1,9 @@
+{
+  "name": "typescript",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "mathjs": "7.0.1",
+    "sha1": "^1.1.1"
+  }
+}

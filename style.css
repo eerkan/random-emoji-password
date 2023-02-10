@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+
+div#app p.password {
+  font-size: 3em;
+  font-family: Noto Color Emoji, Apple Color Emoji, Segoe UI Emoji,
+    Noto Color Emoji, Android Emoji, EmojiSymbols, EmojiOne Mozilla,
+    Twemoji Mozilla, Segoe UI Symbol, Noto Color Emoji Compat, emoji,
+    noto-emojipedia-fallback;
+}
+
+div#app p.info {
+  background-color: #bbb;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+div#app input#size {
+  width: calc(100% - 150px);
+}
+
+div#app p.info p {
+  margin: 5px;
+}

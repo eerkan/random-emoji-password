@@ -1,0 +1,21 @@
+<div id="app">
+  <p class="size">
+    Password size:
+    <input
+      type="range"
+      id="size"
+      name="size"
+      min="1"
+      max="256"
+      value="16"
+      oninput="this.nextElementSibling.value = this.value"
+    />
+    <output>16</output>
+  </p>
+  <p class="action">
+    <button class="regenerate">Regenerate</button>
+    <button class="copy">Copy!</button>
+  </p>
+  <p class="password"></p>
+  <p class="info"></p>
+</div>
