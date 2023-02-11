@@ -1,8 +1,9 @@
 import './style.css';
 import * as sha1lib from 'sha1';
-import { emojiList } from './emoji-list.ts';
+import * as emojis from 'emojis-list';
 
 const sha1 = sha1lib.default;
+const emojiList = Object.entries(emojis).map((emojiEntry) => emojiEntry[1]);
 
 const getRandomInt = (min: number, max: number) => {
   const range = max - min + 1;
@@ -44,8 +45,7 @@ const createAPassword = (size) => {
   if (createPassword) {
     for (let i = 0x0; i < size; i++) {
       const random = getRandomInt(0, emojiList.length - 1);
-      const emojiHex = parseInt(emojiList[random], 0x10);
-      const emoji = String.fromCodePoint(emojiHex);
+      const emoji = emojiList[random];
       password += emoji;
     }
     console.log(`Password: ${password}`);
