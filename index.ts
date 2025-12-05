@@ -1,9 +1,9 @@
 import './style.css';
 import * as sha1lib from 'sha1';
-import * as emojis from 'emojis-list';
+import fullEmojiList from 'full-emoji-list';
 
 const sha1 = sha1lib.default;
-const emojiList = Object.entries(emojis).map((emojiEntry) => emojiEntry[1]);
+const emojiList = fullEmojiList.map((x) => x.Emoji);
 
 const getRandomInt = (min: number, max: number) => {
   const range = max - min + 1;
