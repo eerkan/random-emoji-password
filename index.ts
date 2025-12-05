@@ -61,7 +61,7 @@ const createAPassword = (size) => {
   const info = `
   <p>Size: ${size}</p>
   <p>Bits: ${bits}</p>
-  <p>Entropy: ${entropy}</p>
+  <p>Entropy: 10<sup>${entropy}</sup> ≈ 2<sup>${bits}</sup></p>
   <p>SHA1: ${sha1pass}</p>
   `;
   document.querySelector('div#app p.info').innerHTML = info;
